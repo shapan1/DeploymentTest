@@ -15,7 +15,7 @@ $routeProvider
 .when("/other", {templateUrl: "partials/other.html", controller: "Step1Ctrl as home"})
 /* etc… routes to other pages… */
 // else 404
-.otherwise("/404", {templateUrl: "partials/404.html",controller: "Step1Ctrl"});
+.otherwise("/404", {templateUrl: "404.html",controller: "Step1Ctrl"});
 }]);
 
 app.controller('Step1Ctrl', function ($scope, $location, $http) {
