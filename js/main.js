@@ -1,3 +1,4 @@
+(function (){
 /**
  * initializing the app
  */
@@ -109,4 +110,4 @@ app.controller('Step1Ctrl', function ($scope, $location, $http) {
 });
 
 
-
+})();
