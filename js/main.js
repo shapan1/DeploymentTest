@@ -12,15 +12,11 @@ $routeProvider
 // Home
 .when("/", {templateUrl: "partials/home.html", controller: "Step1Ctrl as home"})
 // Pages
-.when("/other", {templateUrl: "partials/other.html", controller: "Step2Ctrl as vm"})
+.when("/other", {templateUrl: "partials/other.html", controller: "Step1Ctrl as home"})
 /* etc… routes to other pages… */
 // else 404
 .otherwise("/404", {templateUrl: "partials/404.html",controller: "Step1Ctrl"});
 }]);
-
-app.controller('Step2Ctrl', function ($scope, $location, $http) {
-    console.log("Step2 Controller reporting for duty.");
-});
 
 app.controller('Step1Ctrl', function ($scope, $location, $http) {
     console.log("Step1 Controller reporting for duty.");
