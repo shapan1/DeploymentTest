@@ -1,0 +1,58 @@
+<div class="container">
+<h1 class="heading -large">{{ vm.title }}</h1>
+
+<!--<h3 class="heading -medium">Here is a super fancy number served up courtesy of Angular: <span class="number-example">{{ home.number }}</span></h3>
+
+<h4>State Resolved Data: {{ home.myResolvedData }}</h4>
+
+<img src="images/angular.png" height="100" />
+<img src="images/gulp.png" height="100" />
+<img src="images/browserify.png" height="100" />-->
+
+<hr/>
+<!--
+<example-directive data-title="{{ home.bindedScopeValue }}" data-click-message="You clicked me!" data-display-message="true">Directive is not loaded.</example-directive>
+
+<hr/>
+
+<button class="btn btn-default" ng-click="home.myViewFunction()">Do something else! (Check console)</button>
+<div ng-if="home.privateProperty">Private property: {{ home.privateProperty }}</div>
+
+<hr />-->
+
+  <h2>Step 2</h2>
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Baseline Platelet Concentration</th>
+        <th>Concentration of Platelet required in PRP</th>
+        <th>Volume of PRP required</th>
+        <th>Mean Efficiency</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td><input type="number" ng-model="vm.a" /></td>
+        <td><input type="number" ng-model="vm.b" /></td>
+        <td><input type="number" ng-model="vm.c" /></td>
+        <td><input type="number" ng-model="vm.d" /></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
+
+  <div class="col-md-offset-4">Please draw
+  <mark> <strong> {{ ( vm.b * vm.c) / (vm.a * vm.d) }}   ml </strong> </mark> of Blood
+  </div>
+  <br>
+<hr>
+<a href="#/" class="btn btn-default">Go back home</a>
+<p style="padding-bottom:10px"></p>
+
+</div>
