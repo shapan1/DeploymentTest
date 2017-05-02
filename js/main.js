@@ -11,8 +11,7 @@ $routeProvider
 // Home
 .when("/", {templateUrl: "partials/home.html", controller: "Step1Ctrl as home"})
 // Pages
-.when("/other", {templateUrl: "partials/other.html", controller: "Step2Ctrl as vm"})
-.when("/temp", {templateUrl: "partials/temp.html", controller: "TempCtrl"})
+.when("#/other", {templateUrl: "partials/other.html", controller: "Step2Ctrl as vm"})
 /* etc… routes to other pages… */
 // else 404
 .otherwise("/404", {templateUrl: "partials/404.html",controller: "Step1Ctrl"});
