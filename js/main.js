@@ -2,7 +2,7 @@
 /**
  * initializing the app
  */
-var app = angular.module('myApp', ['ngRoute','ngMaterial']);
+var app = angular.module('myApp', ['ngRoute']);
 
 /**
  * configuring the routes
