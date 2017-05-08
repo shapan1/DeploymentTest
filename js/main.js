@@ -2,7 +2,7 @@
 /**
  * initializing the app
  */
-var app = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngParallax']);
+var app = angular.module('myApp', ['ngRoute', 'ngMaterial']);
 
 /**
  * configuring the routes
