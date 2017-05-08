@@ -1,107 +1,121 @@
-<div>
-  <h2>Step 1</h2>
-  <div class="table-responsive">          
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Case #</th>
-        <th>Volume of Blood Drawn</th>
-        <th>Baseline Platelet Conc.</th>
-        <th>Final Conc. of Platelet in PRP</th>
-        <th>Volume of PRP required</th>
-        <th>Efficiency</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td><input type="number" ng-model="home.case1.a" /></td>
-        <td><input type="number" ng-model="home.case1.b" /></td>
-        <td><input type="number" ng-model="home.case1.c" /></td>
-        <td><input type="number" ng-model="home.case1.d" /></td>
-        <td>{{ (home.case1.c * home.case1.d) / (home.case1.a * home.case1.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td><input type="number" ng-model="home.case2.a" /></td>
-        <td><input type="number" ng-model="home.case2.b" /></td>
-        <td><input type="number" ng-model="home.case2.c" /></td>
-        <td><input type="number" ng-model="home.case2.d" /></td>
-        <td>{{ (home.case2.c * home.case2.d) / (home.case2.a * home.case2.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td><input type="number" ng-model="home.case3.a" /></td>
-        <td><input type="number" ng-model="home.case3.b" /></td>
-        <td><input type="number" ng-model="home.case3.c" /></td>
-        <td><input type="number" ng-model="home.case3.d" /></td>
-        <td>{{ (home.case3.c * home.case3.d) / (home.case3.a * home.case3.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td><input type="number" ng-model="home.case4.a" /></td>
-        <td><input type="number" ng-model="home.case4.b" /></td>
-        <td><input type="number" ng-model="home.case4.c" /></td>
-        <td><input type="number" ng-model="home.case4.d" /></td>
-        <td>{{ (home.case4.c * home.case4.d) / (home.case4.a * home.case4.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td><input type="number" ng-model="home.case5.a" /></td>
-        <td><input type="number" ng-model="home.case5.b" /></td>
-        <td><input type="number" ng-model="home.case5.c" /></td>
-        <td><input type="number" ng-model="home.case5.d" /></td>
-        <td>{{ (home.case5.c * home.case5.d) / (home.case5.a * home.case5.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td><input type="number" ng-model="home.case6.a" /></td>
-        <td><input type="number" ng-model="home.case6.b" /></td>
-        <td><input type="number" ng-model="home.case6.c" /></td>
-        <td><input type="number" ng-model="home.case6.d" /></td>
-        <td>{{ (home.case6.c * home.case6.d) / (home.case6.a * home.case6.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td><input type="number" ng-model="home.case7.a" /></td>
-        <td><input type="number" ng-model="home.case7.b" /></td>
-        <td><input type="number" ng-model="home.case7.c" /></td>
-        <td><input type="number" ng-model="home.case7.d" /></td>
-        <td>{{ (home.case7.c * home.case7.d) / (home.case7.a * home.case7.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td><input type="number" ng-model="home.case8.a" /></td>
-        <td><input type="number" ng-model="home.case8.b" /></td>
-        <td><input type="number" ng-model="home.case8.c" /></td>
-        <td><input type="number" ng-model="home.case8.d" /></td>
-        <td>{{ (home.case8.c * home.case8.d) / (home.case8.a * home.case8.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td><input type="number" ng-model="home.case9.a" /></td>
-        <td><input type="number" ng-model="home.case9.b" /></td>
-        <td><input type="number" ng-model="home.case9.c" /></td>
-        <td><input type="number" ng-model="home.case9.d" /></td>
-        <td>{{ (home.case9.c * home.case9.d) / (home.case9.a * home.case9.b) | number:2}}</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td><input type="number" ng-model="home.case10.a" /></td>
-        <td><input type="number" ng-model="home.case10.b" /></td>
-        <td><input type="number" ng-model="home.case10.c" /></td>
-        <td><input type="number" ng-model="home.case10.d" /></td>
-        <td>{{ (home.case10.c * home.case10.d) / (home.case10.a * home.case10.b) | number:2}}</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
 
-  <div class="col-md-offset-4">Calculated Mean Efficiency
-  <mark> <strong> {{ ( ((home.case1.c * home.case1.d) / (home.case1.a * home.case1.b)) + ((home.case2.c * home.case2.d) / (home.case2.a * home.case2.b)) + ((home.case3.c * home.case3.d) / (home.case3.a * home.case3.b)) + ((home.case4.c * home.case4.d) / (home.case4.a * home.case4.b)) + ((home.case5.c * home.case5.d) / (home.case5.a * home.case5.b)) + ((home.case6.c * home.case6.d) / (home.case6.a * home.case6.b)) + ((home.case7.c * home.case7.d) / (home.case7.a * home.case7.b)) + ((home.case8.c * home.case8.d) / (home.case8.a * home.case8.b)) + ((home.case9.c * home.case9.d) / (home.case9.a * home.case9.b)) + ((home.case10.c * home.case10.d) / (home.case10.a * home.case10.b)) ) /10 | number:2}}</strong></mark>
-  </div>
-  <br>
-<hr>
-<a href="#/other"><md-button class="md-raised">Go to Step 2</md-button></a>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">STEP 1</h3>
+        <p> 
+          Platelet counts vary in different people and it is difficult to achieve the same concentration of platelets in all our 
+          PRP preparations. The three steps mentioned in the site will bring us closer to making an ideal PRP preparation.</p>
+          
+                <div>
+                    
+                    <div class="table-responsive">          
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Case #</th>
+                            <th>Volume of Blood Drawn</th>
+                            <th>Baseline Platelet Conc.</th>
+                            <th>Final Conc. of Platelet in PRP</th>
+                            <th>Volume of PRP required</th>
+                            <th>Efficiency</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="number" ng-model="home.case1.a" /></td>
+                            <td><input type="number" ng-model="home.case1.b" /></td>
+                            <td><input type="number" ng-model="home.case1.c" /></td>
+                            <td><input type="number" ng-model="home.case1.d" /></td>
+                            <td>{{ (home.case1.c * home.case1.d) / (home.case1.a * home.case1.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="number" ng-model="home.case2.a" /></td>
+                            <td><input type="number" ng-model="home.case2.b" /></td>
+                            <td><input type="number" ng-model="home.case2.c" /></td>
+                            <td><input type="number" ng-model="home.case2.d" /></td>
+                            <td>{{ (home.case2.c * home.case2.d) / (home.case2.a * home.case2.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><input type="number" ng-model="home.case3.a" /></td>
+                            <td><input type="number" ng-model="home.case3.b" /></td>
+                            <td><input type="number" ng-model="home.case3.c" /></td>
+                            <td><input type="number" ng-model="home.case3.d" /></td>
+                            <td>{{ (home.case3.c * home.case3.d) / (home.case3.a * home.case3.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><input type="number" ng-model="home.case4.a" /></td>
+                            <td><input type="number" ng-model="home.case4.b" /></td>
+                            <td><input type="number" ng-model="home.case4.c" /></td>
+                            <td><input type="number" ng-model="home.case4.d" /></td>
+                            <td>{{ (home.case4.c * home.case4.d) / (home.case4.a * home.case4.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><input type="number" ng-model="home.case5.a" /></td>
+                            <td><input type="number" ng-model="home.case5.b" /></td>
+                            <td><input type="number" ng-model="home.case5.c" /></td>
+                            <td><input type="number" ng-model="home.case5.d" /></td>
+                            <td>{{ (home.case5.c * home.case5.d) / (home.case5.a * home.case5.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><input type="number" ng-model="home.case6.a" /></td>
+                            <td><input type="number" ng-model="home.case6.b" /></td>
+                            <td><input type="number" ng-model="home.case6.c" /></td>
+                            <td><input type="number" ng-model="home.case6.d" /></td>
+                            <td>{{ (home.case6.c * home.case6.d) / (home.case6.a * home.case6.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><input type="number" ng-model="home.case7.a" /></td>
+                            <td><input type="number" ng-model="home.case7.b" /></td>
+                            <td><input type="number" ng-model="home.case7.c" /></td>
+                            <td><input type="number" ng-model="home.case7.d" /></td>
+                            <td>{{ (home.case7.c * home.case7.d) / (home.case7.a * home.case7.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><input type="number" ng-model="home.case8.a" /></td>
+                            <td><input type="number" ng-model="home.case8.b" /></td>
+                            <td><input type="number" ng-model="home.case8.c" /></td>
+                            <td><input type="number" ng-model="home.case8.d" /></td>
+                            <td>{{ (home.case8.c * home.case8.d) / (home.case8.a * home.case8.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><input type="number" ng-model="home.case9.a" /></td>
+                            <td><input type="number" ng-model="home.case9.b" /></td>
+                            <td><input type="number" ng-model="home.case9.c" /></td>
+                            <td><input type="number" ng-model="home.case9.d" /></td>
+                            <td>{{ (home.case9.c * home.case9.d) / (home.case9.a * home.case9.b) | number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><input type="number" ng-model="home.case10.a" /></td>
+                            <td><input type="number" ng-model="home.case10.b" /></td>
+                            <td><input type="number" ng-model="home.case10.c" /></td>
+                            <td><input type="number" ng-model="home.case10.d" /></td>
+                            <td>{{ (home.case10.c * home.case10.d) / (home.case10.a * home.case10.b) | number:2}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
 
-</div>
+                    <div class="col-md-offset-4">Calculated Mean Efficiency
+                    <mark> <strong> {{ ( ((home.case1.c * home.case1.d) / (home.case1.a * home.case1.b)) + ((home.case2.c * home.case2.d) / (home.case2.a * home.case2.b)) + ((home.case3.c * home.case3.d) / (home.case3.a * home.case3.b)) + ((home.case4.c * home.case4.d) / (home.case4.a * home.case4.b)) + ((home.case5.c * home.case5.d) / (home.case5.a * home.case5.b)) + ((home.case6.c * home.case6.d) / (home.case6.a * home.case6.b)) + ((home.case7.c * home.case7.d) / (home.case7.a * home.case7.b)) + ((home.case8.c * home.case8.d) / (home.case8.a * home.case8.b)) + ((home.case9.c * home.case9.d) / (home.case9.a * home.case9.b)) + ((home.case10.c * home.case10.d) / (home.case10.a * home.case10.b)) ) /10 | number:2}}</strong></mark>
+                    </div>
+                    <br>
+                    <hr>
+                    <a href="#/other"><md-button class="md-raised">Go to Step 2</md-button></a>
+
+                    </div>
+
+
+
+        </div>
+
+
+
