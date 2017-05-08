@@ -25,17 +25,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("../img/derma2.jpg");
+  background-image: url("../img/derma4.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("img_parallax2.jpg");
+  background-image: url("../img/derma5.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("img_parallax3.jpg");
+  background-image: url("../img/derma6.jpg");
   min-height: 400px;
 }
 
