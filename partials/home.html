@@ -108,8 +108,8 @@
                     <mark> <strong> {{ ( ((home.case1.c * home.case1.d) / (home.case1.a * home.case1.b)) + ((home.case2.c * home.case2.d) / (home.case2.a * home.case2.b)) + ((home.case3.c * home.case3.d) / (home.case3.a * home.case3.b)) + ((home.case4.c * home.case4.d) / (home.case4.a * home.case4.b)) + ((home.case5.c * home.case5.d) / (home.case5.a * home.case5.b)) + ((home.case6.c * home.case6.d) / (home.case6.a * home.case6.b)) + ((home.case7.c * home.case7.d) / (home.case7.a * home.case7.b)) + ((home.case8.c * home.case8.d) / (home.case8.a * home.case8.b)) + ((home.case9.c * home.case9.d) / (home.case9.a * home.case9.b)) + ((home.case10.c * home.case10.d) / (home.case10.a * home.case10.b)) ) /10 | number:2}}</strong></mark>
                     </div>
                     <br>
-                    <hr>
-                    <a href="#/other"><md-button class="md-raised">Go to Step 2</md-button></a>
+                    <!--                    
+                    <a href="#/other"><md-button class="md-raised">Go to Step 2</md-button></a>-->
 
                     </div>
 
@@ -123,51 +123,42 @@
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color: #777;background-color:white;text-align:center;text-align: justify;">
-    <!-- shifting other.html here -->
-        <div class="container">
-            <h2  style="text-align:center;" id="page2">Step 2</h2>
-            <div class="table-responsive">          
-            <table class="table">
-                <thead>
-                <tr>
-                    
-                    <th>Baseline Platelet Concentration</th>
-                    <th>Concentration of Platelet required in PRP</th>
-                    <th>Volume of PRP required</th>
-                    <th>Mean Efficiency</th>
-                    
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    
-                    <td><input type="number" ng-model="home.a" /></td>
-                    <td><input type="number" ng-model="home.b" /></td>
-                    <td><input type="number" ng-model="home.c" /></td>
-                    <td><input type="number" ng-model="home.d" /></td>
-                    
-                </tr>
-                
-                </tbody>
-            </table>
-            </div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">STEP 2</h3>
+    
+    <div class="table-responsive">          
+    <table class="table">
+        <thead>
+        <tr>
+            
+            <th>Baseline Platelet Concentration</th>
+            <th>Concentration of Platelet required in PRP</th>
+            <th>Volume of PRP required</th>
+            <th>Mean Efficiency</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            
+            <td><input type="number" ng-model="home.a" /></td>
+            <td><input type="number" ng-model="home.b" /></td>
+            <td><input type="number" ng-model="home.c" /></td>
+            <td><input type="number" ng-model="home.d" /></td>
+            
+        </tr>
+        
+        </tbody>
+    </table>
+    </div>
 
-            <div class="col-md-offset-4">Please draw
-            <mark> <strong> {{ ( home.b * home.c) / (home.a * home.d) }}   ml </strong> </mark> of Blood
-            </div>
-            <br>
-            <hr>
-            <a href="#/" class="btn btn-default">Go back home</a>
-            <p style="padding-bottom:10px"></p>
-
-        </div>
+    <div class="col-md-offset-4">Please draw
+    <mark> <strong> {{ ( home.b * home.c) / (home.a * home.d) }}   ml </strong> </mark> of Blood
+    </div>
+    <br>
+    <hr>
+    <a href="#/" class="btn btn-default">Go back home</a>
+    <p style="padding-bottom:10px"></p>
 
 
-  </div>
 </div>
-
-
-
-
