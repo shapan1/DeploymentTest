@@ -50,34 +50,24 @@
         </div>        
       </div>
     </nav>-->
-
-    <div ng-controller="Step1Ctrl" ng-cloak>
-    <md-content class="md-padding">
-      <md-nav-bar
-        md-selected-nav-item="currentNavItem"
-        nav-bar-aria-label="navigation links">
-        <md-nav-item md-nav-href="#page1" name="page1">
-          STEP 1
-        </md-nav-item>
-        <md-nav-item md-nav-href="#page2" name="page2">
-          STEP 2
-        </md-nav-item>
-        <md-nav-item md-nav-href="#page3" name="page3">
-          SUPPLEMENTARY STEP
-        </md-nav-item>
-        <!-- these require actual routing with ui-router or ng-route, so they
-        won't work in the demo
-        <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
-        <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
-        You can also add options for the <code>ui-sref-opts</code> attribute.
-        <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
-          Page Six
-        </md-nav-item>
-        -->
-      </md-nav-bar>
-
-    </md-content>
-  </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PRP Calculator</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#page1">STEP 1</a></li>
+          <li><a href="#page2">STEP 2</a></li>
+          <li><a href="#page3">SUPPLEMENTARY STEP</a></li>
+          <li><a href="#/page4">ABOUT US</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+        </ul>
+      </div>
+    </nav>
 
     <div class="container">
       <br>
