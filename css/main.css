@@ -26,12 +26,12 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("../img/derma6.jpg");
-  height: 60%;
+  height: 70%;
 }
 
 .bgimg-2 {
-  background-image: url("../img/derma6.jpg");
-  min-height: 60%;
+  background-image: url("../img/derma4.jpg");
+  min-height: 50%;
 }
 
 .bgimg-3 {
